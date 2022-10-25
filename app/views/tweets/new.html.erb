@@ -1,0 +1,5 @@
+<%= form_for @tweet , url: {action: :create} do |t| %>
+    <%= t.label :message, 'メッセージ' %>
+    <%= t.text_field :message %>
+    <%= t.submit 'ツイートする' %>
+<% end %>

@@ -1,0 +1,10 @@
+<% @users.each do |t| %>
+    <p>
+        <%= t.uid %>
+        <%= t.pass %>
+        <%= link_to '削除', user_path(t.id), method: :delete %>
+    </p>
+<% end %>
+
+<%= link_to '新規作成', new_user_path %>
+<%= link_to 'ツイート一覧', tweets_path %>

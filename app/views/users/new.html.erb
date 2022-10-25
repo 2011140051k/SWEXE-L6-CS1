@@ -1,0 +1,9 @@
+<%= form_for @user , url: {action: :create} do |t| %>
+    <%= t.label :uid, 'ユーザー名' %>
+    <%= t.text_field :uid %>
+    <%= t.label :password, 'パスワード' %>
+    <%= t.password_field :password %>
+    <%= t.label :password_confirmation, 'パスワード(確認)' %>
+    <%= t.password_field :password_confirmation %>
+    <%= t.submit '登録' %>
+<% end %>
